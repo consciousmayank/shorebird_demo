@@ -15,13 +15,13 @@ class StartupView extends StackedView<StartupViewModel> {
     Widget? child,
   ) {
     return const Scaffold(
-      backgroundColor: Colors.black12,
+      backgroundColor: Colors.red,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'SpiceMoney',
+              'Shorebird',
               style: TextStyle(
                 fontSize: 40,
                 fontWeight: FontWeight.w900,
