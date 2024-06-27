@@ -19,18 +19,22 @@ class SettingsView extends StackedView<SettingsViewModel> {
         alignment: Alignment.center,
         color: Colors.blueGrey.withOpacity(0.5),
         padding: const EdgeInsets.only(left: 25.0, right: 25.0),
-        child: const Column(
+        child: Column(
           children: [
+            verticalSpaceTiny,
             CircleAvatar(
+              maxRadius: 100,
+              minRadius: 50,
               child: FlutterLogo(
                 size: 80,
               ),
-              maxRadius: 100,
-              minRadius: 50,
             ),
             verticalSpaceMedium,
             Card(
               child: ListTile(
+                onTap: (){
+                  viewModel.takeToProfilesScreen();
+                },
                 trailing: Icon(Icons.arrow_forward_ios_rounded),
                 title: Text("Update profile"),
                 subtitle: Text(

@@ -7,6 +7,7 @@ import 'package:stacked_services/stacked_services.dart';
 import 'package:shorebird_demo/ui/views/landing/landing_view.dart';
 import 'package:shorebird_demo/ui/views/qr_code/qr_code_view.dart';
 import 'package:shorebird_demo/ui/views/settings/settings_view.dart';
+import 'package:shorebird_demo/ui/views/profile/profile_view.dart';
 // @stacked-import
 
 @StackedApp(
@@ -16,6 +17,7 @@ import 'package:shorebird_demo/ui/views/settings/settings_view.dart';
     MaterialRoute(page: LandingView),
     MaterialRoute(page: QrCodeView),
     MaterialRoute(page: SettingsView),
+    MaterialRoute(page: ProfileView),
 // @stacked-route
   ],
   dependencies: [

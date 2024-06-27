@@ -13,6 +13,7 @@ class HomeView extends StackedView<HomeViewModel> {
     Widget? child,
   ) {
     return Scaffold(
+      backgroundColor: Colors.green,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: viewModel.currentIndex,
         landscapeLayout: BottomNavigationBarLandscapeLayout.centered,
