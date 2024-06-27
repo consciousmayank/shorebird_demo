@@ -3,6 +3,9 @@ import 'package:shorebird_demo/app/app.bottomsheets.dart';
 import 'package:shorebird_demo/app/app.dialogs.dart';
 import 'package:shorebird_demo/app/app.locator.dart';
 import 'package:shorebird_demo/ui/common/app_strings.dart';
+import 'package:shorebird_demo/ui/views/landing/landing_view.dart';
+import 'package:shorebird_demo/ui/views/qr_code/qr_code_view.dart';
+import 'package:shorebird_demo/ui/views/settings/settings_view.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -51,6 +54,17 @@ class HomeViewModel extends IndexTrackingViewModel {
   }
 
   Widget getView() {
+    return switch (currentIndex) {
+      0 => const LandingView(),
+      1 => const QrCodeView(),
+      2 => const SettingsView(),
+      _ => const Center(
+          child: Text(
+            'No View',
+          ),
+        ),
+    };
+
     return Container(
       alignment: Alignment.center,
       child: Text(navBottomItems.elementAt(currentIndex).label ?? "None"),
