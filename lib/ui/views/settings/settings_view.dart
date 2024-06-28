@@ -46,9 +46,9 @@ class SettingsView extends StackedView<SettingsViewModel> {
               child: ListTile(
                 onTap: viewModel.askForPermissions,
                 trailing: Icon(Icons.arrow_forward_ios_rounded),
-                title: Text("Add a new Seh-Adhikari"),
+                title: Text("Ask for contacts permissions and create a patch"),
                 subtitle: Text(
-                  "Add a new Collegue",
+                  "Added permissions handler plugin",
                 ),
               ),
             ),
