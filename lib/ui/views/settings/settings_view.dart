@@ -44,6 +44,7 @@ class SettingsView extends StackedView<SettingsViewModel> {
             ),
             Card(
               child: ListTile(
+                onTap: viewModel.askForPermissions,
                 trailing: Icon(Icons.arrow_forward_ios_rounded),
                 title: Text("Add a new Seh-Adhikari"),
                 subtitle: Text(
